@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OGGY Gaming</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #10111b;
+      color: white;
+    }
+    header {
+      padding: 22px;
+      background: #1c1d2b;
+      text-align: center;
+    }
+    header h1 {
+      color: #67f5b5;
+      margin: 0;
+    }
+    nav {
+      text-align: center;
+      padding: 16px;
+    }
+    nav a {
+      color: white;
+      margin: 12px;
+      text-decoration: none;
+    }
+    .hero {
+      text-align: center;
+      padding: 55px 16px;
+    }
+    .hero h2 {
+      font-size: 34px;
+    }
+    .games {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 18px;
+      padding: 20px;
+    }
+    .card {
+      background: #242638;
+      padding: 24px;
+      border-radius: 14px;
+      width: 220px;
+      text-align: center;
+    }
+    button {
+      background: #67f5b5;
+      border: 0;
+      padding: 12px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: #bbb;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>OGGY GAMING</h1>
+    <p>Your Gaming Zone</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#games">Games</a>
+    <a href="#about">About</a>
+  </nav>
+
+  <section class="hero" id="home">
+    <h2>WELCOME TO OGGY</h2>
+    <p>Discover your next favourite game!</p>
+    <button onclick="document.getElementById('games').scrollIntoView({behavior:'smooth'})">
+      Explore Games
+    </button>
+  </section>
+
+  <section class="games" id="games">
+    <div class="card">
+      <h3>Action Games</h3>
+      <p>Explore exciting action games.</p>
+      <button onclick="alert('Action games coming soon!')">Explore</button>
+    </div>
+
+    <div class="card">
+      <h3>Horror Games</h3>
+      <p>Enter the world of scary adventures.</p>
+      <button onclick="alert('Horror games coming soon!')">Explore</button>
+    </div>
+
+    <div class="card">
+      <h3>Racing Games</h3>
+      <p>Get ready for speed and fun.</p>
+      <button onclick="alert('Racing games coming soon!')">Explore</button>
+    </div>
+  </section>
+
+  <footer id="about">
+    <p>© 2026 OGGY Gaming</p>
+  </footer>
+</body>
+</html>
